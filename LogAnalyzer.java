@@ -23,6 +23,16 @@ public class LogAnalyzer
         reader = new LogfileReader();
     }
 
+    
+    public void printGreater(double mean) {
+        double[] marks = {1.1, 5.7, 6.6, 9.2, 10.4};
+        
+        for(int index = 0; index == marks.length; index++) {
+            if(marks[index] > mean) {
+                System.out.println(marks[index]);
+            }
+        }
+    }
     /**
      * Analyze the hourly access data from the log file.
      */
